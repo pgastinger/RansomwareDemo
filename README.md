@@ -2,6 +2,17 @@
 
 based on https://github.com/deadPix3l/CryptSky
 
+## Build .exe-file using pyinstaller
+demo without options (encrypting everything in c:\temp)
+```
+pyinstaller build_danger.spec
+```
+demo
+```
+pyinstaller build.spec
+```
+
+## Run exe (without options)
 ```
 C:\danger.exe
 This is a demo ransomware. Basically it only encrypts files from a specific dire
@@ -31,10 +42,8 @@ Encrypting file C:\Temp\test_8.yaml
 Encrypting file C:\Temp\test_9.bak
 Encrypting file C:\Temp\test_9.pyc
 ```
-```
-pyinstaller build_danger.spec
-```
 
+## Run exe (with options)
 ```
 C:\Users\>ransomware.exe
 usage: ransomware.exe [-h] -c CONFIG [-g] [-d]
